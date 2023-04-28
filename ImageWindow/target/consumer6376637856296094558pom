@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0           http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!--【必须】指定 POM 文件的版本; 该元素的值必须是 "4.0.0"-->
+    <modelVersion>4.0.0</modelVersion>
+	
+	<!-- groupId:artifactId:version Maven中依赖项的标识符;
+	   用于指定项目所依赖的库或框架的名称、版本和组织;
+	   这三个元素组成了 Maven 仓库中唯一标识一个项目的坐标。如果缺少其中任何一项，
+	   Maven 将无法正确地处理项目 依赖 和 构建 过程;
+	-->
+
+	<!--【必须】指定项目的组ID，通常以 反向域名 的方式命名-->
+    <groupId>com.faintdream</groupId>
+
+	<!--【必须】指定项目的项目的唯一标识符，通常与项目的 根目录 和主要的 Java 包名相关联-->
+    <artifactId>image-window</artifactId>
+
+	<!--【必须】指定项目的版本号-->	
+    <version>1.0-SNAPSHOT</version>
+
+
+	<!--【必须】指定 Maven 打包后生成的文件类型(jar,war,pom...)-->
+    <packaging>jar</packaging>
+	
+	<!--【可选】定义项目的名称-->
+    <name>My App</name>
+
+	<!--【可选】定义项目的 URL (通常用于指向项目的主页或源代码仓库)-->
+    <url>https://example.com/my-app</url>
+	
+
+	<!--【可选】properties 元素，它用于定义 Maven 构建过程中所需的属性-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+	
+
+    <dependencies>
+
+         <!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+
+            <!--【可选】 指定依赖项在那个阶段(生命周期)可用;它有以下值-->
+            <!--
+            compile（默认）：依赖项在所有生命周期中可用，包括开发和部署时期。
+            provided：依赖项在开发和测试时期可用，但在打包阶段不会被包含在内。如Servlet API。
+            runtime：依赖项在运行时可用，但在编译时不需要。
+            test：依赖项仅在测试时可用，不参与运行时和编译时的依赖。
+            system：与provided类似，但要求显式地提供路径到依赖项。不推荐使用，因为不利于构建的移植性。
+            import：用于管理依赖项的版本号。它只在dependencyManagement部分使用。
+            -->
+			<scope>test</scope>
+
+		</dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!--使用maven-jar-plugin 插件进行打包-->
+
+        </plugins>
+    </build>
+</project>
