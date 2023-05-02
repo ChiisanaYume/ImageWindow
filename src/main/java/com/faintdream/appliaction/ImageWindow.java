@@ -1,3 +1,5 @@
+package com.faintdream.appliaction;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,7 +19,7 @@ public class ImageWindow extends JFrame implements ActionListener {
     private int currentImageIndex = 0; // 当前显示的图片在文件列表中的索引
 
 
-    private final ResourceBundle BUNDLE = ResourceBundle.getBundle("ImageWindow"); // 资源绑定器(获取配置)
+    private final ResourceBundle BUNDLE = ResourceBundle.getBundle("com.faintdream.appliaction.ImageWindow"); // 资源绑定器(获取配置)
 
     private int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
     private int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度

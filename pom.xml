@@ -77,7 +77,7 @@
                         <manifest>
 
                             <!--设置jar压缩包的主类(带包名的完整类名)-->
-                            <mainClass>ImageWindow</mainClass>
+                            <mainClass>com.faintdream.appliaction.ImageWindow</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
