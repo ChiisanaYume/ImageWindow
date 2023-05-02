@@ -1,4 +1,4 @@
-package com.faintdream.appliaction;
+package com.faintdream.application;
 
 import javax.swing.*;
 

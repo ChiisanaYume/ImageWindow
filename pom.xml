@@ -27,10 +27,10 @@
     <packaging>jar</packaging>
 	
 	<!--【可选】定义项目的名称-->
-    <name>My App</name>
+    <name>Image Window</name>
 
 	<!--【可选】定义项目的 URL (通常用于指向项目的主页或源代码仓库)-->
-    <url>https://example.com/my-app</url>
+    <url>https://github.com/ChiisanaYume/ImageWindow</url>
 	
 
 	<!--【可选】properties 元素，它用于定义 Maven 构建过程中所需的属性-->
@@ -62,6 +62,13 @@
 
 		</dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -71,13 +78,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.0</version>
                 <configuration>
                     <archive>
                         <manifest>
 
                             <!--设置jar压缩包的主类(带包名的完整类名)-->
-                            <mainClass>com.faintdream.appliaction.ImageWindow</mainClass>
+                            <mainClass>com.faintdream.application.ImageWindow</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
