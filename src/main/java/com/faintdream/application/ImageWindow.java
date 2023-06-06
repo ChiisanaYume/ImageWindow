@@ -197,12 +197,12 @@ public class ImageWindow extends JFrame implements ActionListener {
             // 存储当前显示的图片
             ImageIcon icon = new ImageIcon(imageFile.getCanonicalPath());
 
-            //裁剪图片
+            // 裁剪图片
             icon = cropIconH(icon, windowHeight - 100, maxImageWidth);
             label.setIcon(icon);
 
-            //label.setBorder(BorderFactory.createLineBorder(Color.pink));
-            //label.setAlignmentX(Component.CENTER_ALIGNMENT);
+            // label.setBorder(BorderFactory.createLineBorder(Color.pink));
+            // label.setAlignmentX(Component.CENTER_ALIGNMENT);
 
             currentImageIndex = index;
         } catch (IOException e) {
