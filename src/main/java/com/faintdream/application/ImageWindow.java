@@ -22,17 +22,17 @@ public class ImageWindow extends JFrame implements ActionListener {
 
     private final ResourceBundle BUNDLE = ResourceBundle.getBundle("ImageWindow"); // 资源绑定器(获取配置)
 
-    private int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
-    private int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度
+    private final int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
+    private final int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度
 
-    private String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
+    private final String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
     private File[] imageFiles = getListFiles(); // 存储所有图片文件的数组
 
-    private boolean imageLoop = Boolean.parseBoolean(BUNDLE.getString("imageLoop")); // 图片是否循环播放
+    private final boolean imageLoop = Boolean.parseBoolean(BUNDLE.getString("imageLoop")); // 图片是否循环播放
     // 显示图片的最大宽度(超过这个宽度会进行二次裁剪)
-    private int maxImageWidth = Integer.parseInt(BUNDLE.getString("maxImageWidth")); // 显示图片的最大宽度
+    private final int maxImageWidth = Integer.parseInt(BUNDLE.getString("maxImageWidth")); // 显示图片的最大宽度
 
-    private String iconPath = BUNDLE.getString("iconPath"); // 窗口图标路径
+    private final String iconPath = BUNDLE.getString("iconPath"); // 窗口图标路径
 
     /**
      * 构造方法
@@ -161,7 +161,7 @@ public class ImageWindow extends JFrame implements ActionListener {
 
         // 创建菜单项
         JMenuItem openMenuItem = new JMenuItem("打开");
-        JMenuItem saveMenuItem = new JMenuItem("保存");
+        JMenuItem saveMenuItem = new JMenuItem("另存");
         JMenuItem exitMenuItem = new JMenuItem("退出");
 
         // 添加菜单项到菜单
@@ -226,7 +226,7 @@ public class ImageWindow extends JFrame implements ActionListener {
         //判断图片宽度是否超过最大宽度，如果超过，继续裁剪
         while (temp.getIconWidth() >= maxWidth) {
             temp = cropIconH(temp, h);
-            h = h * 8 / 10;
+            h = h * 9 / 10;
         }
 
         return temp;
