@@ -160,12 +160,14 @@ public class ImageWindow extends JFrame implements ActionListener {
         JMenu settingMenu = new JMenu("设置");
 
         // 创建菜单项
-        JMenuItem openMenuItem = new JMenuItem("打开");
+        JMenuItem openFIleMenuItem = new JMenuItem("打开文件");
+        JMenuItem openFolderMenuItem2 = new JMenuItem("打开文件夹");
         JMenuItem saveMenuItem = new JMenuItem("另存");
         JMenuItem exitMenuItem = new JMenuItem("退出");
 
         // 添加菜单项到菜单
-        fileMenu.add(openMenuItem);
+        fileMenu.add(openFIleMenuItem);
+        fileMenu.add(openFolderMenuItem2);
         fileMenu.add(saveMenuItem);
         fileMenu.addSeparator();
         fileMenu.add(exitMenuItem);
