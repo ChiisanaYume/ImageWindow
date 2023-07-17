@@ -17,7 +17,7 @@
     <groupId>com.faintdream</groupId>
 
 	<!--【必须】指定项目的项目的唯一标识符，通常与项目的 根目录 和主要的 Java 包名相关联-->
-    <artifactId>image-window</artifactId>
+    <artifactId>imagewindow</artifactId>
 
 	<!--【必须】指定项目的版本号-->	
     <version>1.0-SNAPSHOT</version>
@@ -84,7 +84,7 @@
                         <manifest>
 
                             <!--设置jar压缩包的主类(带包名的完整类名)-->
-                            <mainClass>com.faintdream.application.ImageWindow</mainClass>
+                            <mainClass>com.faintdream.gui.swing.ImageWindow</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

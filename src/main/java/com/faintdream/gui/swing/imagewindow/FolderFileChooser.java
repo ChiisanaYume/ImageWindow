@@ -1,9 +1,18 @@
-package com.faintdream.application;
+package com.faintdream.gui.swing.imagewindow;
 
 import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
 
-public class FolderFileChooser {
+public class FolderFileChooser implements ActionListener {
     public static void main(String[] args) {
+        new FolderFileChooser().selectedFile();
+    }
+
+    public File selectedFile(){
+
         // 创建文件选择器对象
         JFileChooser fileChooser = new JFileChooser();
 
@@ -20,6 +29,23 @@ public class FolderFileChooser {
 
             // 打印文件夹路径（可根据需要进行其他处理）
             System.out.println("选择的文件夹: " + selectedFolder.getAbsolutePath());
+
+            // 如果文件存在
+            if(selectedFolder.exists()){
+                return selectedFolder;
+            }
         }
+
+        // 基本上永远执行不到这里
+        return null;
+    }
+    /**
+     * Invoked when an action occurs.
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        selectedFile();
     }
 }
