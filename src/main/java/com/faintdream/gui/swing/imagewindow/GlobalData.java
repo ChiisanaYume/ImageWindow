@@ -11,7 +11,7 @@ import java.util.Set;
  * @author faintdream
  * @version 1.0
  */
-public class GlobalData<V> extends ThreadLocal<Map<String, V>> {
+public class GlobalData<V> {
     ThreadLocal<Map<String, V>> content;
 
     /**
@@ -32,4 +32,13 @@ public class GlobalData<V> extends ThreadLocal<Map<String, V>> {
         // 代码
         content.remove();
     }
+    /**
+     * 存数据
+     * @param key 数据键
+     * @param value 数据值
+     */
+    public void set(String key, V value){
+        getData().put(key,value);
+    }
+
 }
