@@ -7,6 +7,6 @@ import java.util.Map;
  * @version 1.0
  * @author faintdream
  * */
-public class GlobalData<V> extends ThreadLocal<Map<String,V>>{
-
+public class GlobalData<V> {
+    ThreadLocal<Map<String,V>> data;
 }
