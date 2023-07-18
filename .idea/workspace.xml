@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="COMMIT 20230718">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/MainConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/ConfigFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -64,9 +68,9 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.FolderFileChooser">
-    <configuration name="FileChooser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.FileChooser" />
+  <component name="RunManager" selected="JUnit.ConfigFileTest.loadTest">
+    <configuration name="ConfigFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigFile" />
       <module name="imagewindow" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFrame01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.MyFrame01" />
+    <configuration name="ConfigFileTest.loadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="imagewindow" />
       <extension name="coverage">
         <pattern>
@@ -126,16 +129,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigFileTest" />
+      <option name="METHOD_NAME" value="loadTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConfigFileTest.loadTest" />
+        <item itemvalue="应用程序.ConfigFile" />
         <item itemvalue="应用程序.FolderFileChooser" />
         <item itemvalue="应用程序.ImageWindow" />
         <item itemvalue="应用程序.FolderAndImageFileChooser" />
-        <item itemvalue="应用程序.MyFrame01" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +171,8 @@
       <workItem from="1689399563063" duration="1976000" />
       <workItem from="1689404162776" duration="1649000" />
       <workItem from="1689558447296" duration="5311000" />
-      <workItem from="1689659722580" duration="1959000" />
+      <workItem from="1689659722580" duration="2510000" />
+      <workItem from="1689669478340" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -228,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689660241208</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="COMMIT 20230718">
+      <created>1689662219077</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689662219077</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

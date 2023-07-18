@@ -10,6 +10,8 @@ public class ConfigFile {
     private int windowWidth; // 窗口默认宽度
     private int windowHeight; // 窗口默认高度
 
+    private Properties properties;
+
     public ConfigFile() {
         init();
     }
@@ -21,8 +23,11 @@ public class ConfigFile {
     /**
      * 加载配置文件
      * */
-    private void load(String configFile){
-
+    void load(String configFile) throws IOException{
+        // 加载配置文件
+        FileInputStream inputStream = new FileInputStream(configFile);
+        properties.load(inputStream);
+        inputStream.close();
     }
 
     /**
@@ -32,7 +37,6 @@ public class ConfigFile {
 
     /**
      * 修改资源
-     * @param args
      */
     private void update(){
 
