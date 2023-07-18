@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="COMMIT 20230717" />
+    <list default="true" id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="COMMIT 20230718">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +163,7 @@
       <workItem from="1689399563063" duration="1976000" />
       <workItem from="1689404162776" duration="1649000" />
       <workItem from="1689558447296" duration="5311000" />
-      <workItem from="1689659722580" duration="339000" />
+      <workItem from="1689659722580" duration="1959000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -218,17 +221,36 @@
       <option name="project" value="LOCAL" />
       <updated>1689574437201</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="COMMIT 20230718">
+      <created>1689660241208</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689660241208</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="COMMIT 20230606" />
     <MESSAGE value="COMMIT 20230714" />
     <MESSAGE value="COMMIT 20230715" />
     <MESSAGE value="COMMIT 20230717" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230717" />
+    <MESSAGE value="COMMIT 20230718" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230718" />
   </component>
 </project>
