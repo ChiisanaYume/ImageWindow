@@ -1,12 +1,15 @@
 package com.faintdream.gui.swing;
 
+import com.faintdream.gui.swing.imagewindow.ExitAction;
+import com.faintdream.gui.swing.imagewindow.GlobalData;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class ImageWindow extends JFrame implements ActionListener {
@@ -24,7 +27,7 @@ public class ImageWindow extends JFrame implements ActionListener {
     private final int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
     private final int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度
 
-    private final String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
+    private String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
     private File[] imageFiles = getListFiles(); // 存储所有图片文件的数组
 
     private final boolean imageLoop = Boolean.parseBoolean(BUNDLE.getString("imageLoop")); // 图片是否循环播放
@@ -32,6 +35,8 @@ public class ImageWindow extends JFrame implements ActionListener {
     private final int maxImageWidth = Integer.parseInt(BUNDLE.getString("maxImageWidth")); // 显示图片的最大宽度
 
     private final String iconPath = BUNDLE.getString("iconPath"); // 窗口图标路径
+
+    private GlobalData globalData = new GlobalData();
 
     /**
      * 构造方法
@@ -93,6 +98,7 @@ public class ImageWindow extends JFrame implements ActionListener {
 
         // 添加关闭按钮事件(退出程序)
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        addWindowListener(windowListener);
 
         // 显示窗口
         setVisible(true);
@@ -103,6 +109,10 @@ public class ImageWindow extends JFrame implements ActionListener {
      */
     private File[] getListFiles() {
         File imageDir = new File(imageDirPath);
+        File[] files = imageDir.listFiles(new ImageFilter());
+        if(files.length==0){ // 如果没有图片(显示一张默认图片)
+            return imageDir.listFiles(new ImageFilter());
+        }
         return imageDir.listFiles(new ImageFilter());
 
     }
@@ -120,10 +130,11 @@ public class ImageWindow extends JFrame implements ActionListener {
                     || lowerCaseName.endsWith(".png");
         }
     }
+
     /**
      * 调用UIManager设置全局UI
      */
-    private void setGlobalUI(){
+    private void setGlobalUI() {
 
         // 设置菜单之间设置的间距大小
         //UIManager.put("Menu.margin", new InsetsUIResource(0, 100, 0, 100));
@@ -160,13 +171,13 @@ public class ImageWindow extends JFrame implements ActionListener {
 
         // 创建菜单项
         JMenuItem openFIleMenuItem = new JMenuItem("打开文件");
-        JMenuItem openFolderMenuItem2 = new JMenuItem("打开文件夹");
+        JMenuItem openFolderMenuItem = new JMenuItem("打开文件夹");
         JMenuItem saveMenuItem = new JMenuItem("另存");
         JMenuItem exitMenuItem = new JMenuItem("退出");
 
         // 添加菜单项到菜单
         fileMenu.add(openFIleMenuItem);
-        fileMenu.add(openFolderMenuItem2);
+        fileMenu.add(openFolderMenuItem);
         fileMenu.add(saveMenuItem);
         fileMenu.addSeparator();
         fileMenu.add(exitMenuItem);
@@ -177,15 +188,20 @@ public class ImageWindow extends JFrame implements ActionListener {
         menuBar.add(settingMenu);
 
         //布局相关
-        fileMenu.setPreferredSize(new Dimension(50,30));
-        settingMenu.setPreferredSize(new Dimension(50,30));
+        fileMenu.setPreferredSize(new Dimension(50, 30));
+        settingMenu.setPreferredSize(new Dimension(50, 30));
 
         // 将菜单栏设置到窗口
         setJMenuBar(menuBar);
+
+        // 事件
+        openFolderMenuItem.addActionListener(new FolderFileChooser());
+        exitMenuItem.addActionListener(new ExitAction());
     }
 
     /**
      * 显示指定索引的图片
+     *
      * @param index 图片索引
      */
     private void showImage(int index) {
@@ -264,6 +280,7 @@ public class ImageWindow extends JFrame implements ActionListener {
 
     /**
      * 按钮事件处理方法
+     *
      * @param e 事件对象
      */
     @Override
@@ -283,8 +300,78 @@ public class ImageWindow extends JFrame implements ActionListener {
         }
     }
 
+    WindowListener windowListener = new WindowAdapter() {
+        @Override
+        public void windowClosing(WindowEvent e) {
+            // 处理关闭窗口事件的逻辑
+            System.out.println(ImageWindow.this.toString());
+            new ExitAction().exit(0);
+        }
+    };
+
+    class FolderFileChooser implements ActionListener {
+
+        public File selectedFile() {
+
+            // 创建文件选择器对象
+            JFileChooser fileChooser = new JFileChooser();
+
+            // 设置文件选择模式为仅选择文件夹
+            fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+
+            // 显示文件选择对话框
+            int result = fileChooser.showOpenDialog(null);
+
+            // 处理用户选择的操作
+            if (result == JFileChooser.APPROVE_OPTION) {
+                // 获取用户选择的文件夹
+                java.io.File selectedFolder = fileChooser.getSelectedFile();
+
+                // 打印文件夹路径（可根据需要进行其他处理）
+                System.out.println("选择的文件夹: " + selectedFolder.getAbsolutePath());
+
+                // 如果文件存在
+                if (selectedFolder.exists()) {
+                    return selectedFolder;
+                }
+            }
+
+            // 基本上永远执行不到这里
+            return null;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            File file = selectedFile();
+            imageDirPath = file.getAbsolutePath();
+            imageFiles = getListFiles();
+            showImage(0);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "ImageWindow{\n" +
+//                "menuBar=" + menuBar +
+//                ",\n label=" + label +
+//                ",\n prevButton=" + prevButton +
+//                ",\n nextButton=" + nextButton +
+                ",\n currentImageIndex=" + currentImageIndex +
+                ",\n BUNDLE=" + BUNDLE +
+                ",\n windowWidth=" + windowWidth +
+                ",\n windowHeight=" + windowHeight +
+                ",\n imageDirPath='" + imageDirPath + '\'' +
+//                ",\n imageFiles=" + Arrays.toString(imageFiles) +
+                ",\n imageLoop=" + imageLoop +
+                ",\n maxImageWidth=" + maxImageWidth +
+                ",\n iconPath='" + iconPath + '\'' +
+                ",\n globalData=" + globalData +
+                "\n}";
+    }
+
     /**
      * 程序入口
+     *
      * @param args 命令行参数
      */
     public static void main(String[] args) {

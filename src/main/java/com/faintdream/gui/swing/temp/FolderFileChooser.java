@@ -1,7 +1,8 @@
-package com.faintdream.gui.swing.imagewindow;
+package com.faintdream.gui.swing.temp;
+
+import com.faintdream.gui.swing.imagewindow.GlobalData;
 
 import javax.swing.JFileChooser;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -46,6 +47,8 @@ public class FolderFileChooser implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        selectedFile();
+        File file = selectedFile();
+        GlobalData gd = new GlobalData();
+        gd.set("select",file);
     }
 }
