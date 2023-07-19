@@ -1,6 +1,7 @@
 package com.faintdream.gui.swing.imagewindow;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -30,6 +31,7 @@ public class PropertiesUtilTest {
 
     }
 
+
     @Test
     public void setTest() throws IOException{
         PropertiesUtil propertiesUtil = new PropertiesUtil();
@@ -44,6 +46,7 @@ public class PropertiesUtilTest {
         Assert.assertEquals(s,value);
     }
 
+    
     @Test
     public void putTest() throws IOException{
         PropertiesUtil propertiesUtil = new PropertiesUtil();

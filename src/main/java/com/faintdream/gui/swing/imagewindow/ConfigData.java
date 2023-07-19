@@ -96,17 +96,6 @@ public class ConfigData {
     public void save() throws IOException {
         PropertiesUtil config = new PropertiesUtil();
 
-        // 如果不存在文件就创建它
-        try {
-            File file = new File(IOUtil.getClassPath() + File.separator + propertiesFilePath);
-            IOUtil.createNewFile(file);
-        } catch (Exception e) {
-            throw new IOException(e);
-        }
-
-
-        config.setPropertiesFile(IOUtil.getFile(propertiesFilePath));
-
         if (getWindowWidth() != null) {
             config.put("windowWidth", getWindowWidth());
         }

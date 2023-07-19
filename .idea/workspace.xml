@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230719" />
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230719">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,23 +53,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/study/ImageWindow/src/test/java/com/faintdream/tool/util",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/study/ImageWindow/src/test/java/com/faintdream/tool/util&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\ImageWindow\src\test\java\com\faintdream\tool\util" />
@@ -75,7 +79,7 @@
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PropertiesUtilTest.loadTest">
+  <component name="RunManager" selected="JUnit.PropertiesUtilTest.setTest">
     <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
       <module name="ImageWindow" />
@@ -102,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PropertiesUtilTest.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
@@ -111,23 +115,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigDataTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigDataTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ImageWindow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigDataTest" />
-      <option name="METHOD_NAME" value="saveTest" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.PropertiesUtilTest" />
+      <option name="METHOD_NAME" value="getTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,20 +138,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PropertiesUtilTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImageWindow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.PropertiesUtilTest" />
+      <option name="METHOD_NAME" value="setTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
+      <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
-      <item itemvalue="JUnit.ConfigDataTest" />
-      <item itemvalue="JUnit.ConfigDataTest.saveTest" />
       <item itemvalue="应用程序.ImageWindow" />
       <item itemvalue="应用程序.ReadConfigFromJar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
+        <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
         <item itemvalue="应用程序.ReadConfigFromJar" />
         <item itemvalue="应用程序.ImageWindow" />
-        <item itemvalue="JUnit.ConfigDataTest.saveTest" />
-        <item itemvalue="JUnit.ConfigDataTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +197,7 @@
       <workItem from="1689659722580" duration="2510000" />
       <workItem from="1689669478340" duration="975000" />
       <workItem from="1689761322079" duration="6337000" />
+      <workItem from="1689781765303" duration="1786000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -284,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689781700605</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="commit 20230719">
+      <created>1689781827654</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1689781827654</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,17 +323,6 @@
     <MESSAGE value="commit 20230718" />
     <MESSAGE value="commit 20230719" />
     <option name="LAST_COMMIT_MESSAGE" value="commit 20230719" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
