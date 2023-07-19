@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230718">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/ReadConfigFromJar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
-    </list>
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230719" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +191,7 @@
       <workItem from="1689558447296" duration="5311000" />
       <workItem from="1689659722580" duration="2510000" />
       <workItem from="1689669478340" duration="975000" />
-      <workItem from="1689761322079" duration="6232000" />
+      <workItem from="1689761322079" duration="6337000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -283,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689694201197</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit 20230719">
+      <created>1689781700605</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689781700605</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +308,8 @@
     <MESSAGE value="COMMIT 20230717" />
     <MESSAGE value="COMMIT 20230718" />
     <MESSAGE value="commit 20230718" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20230718" />
+    <MESSAGE value="commit 20230719" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20230719" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
