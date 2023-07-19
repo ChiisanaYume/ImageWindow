@@ -28,8 +28,8 @@ public class ImageWindow extends JFrame implements ActionListener {
     private final ConfigData config = new ConfigData();
     private final ResourceBundle BUNDLE = ResourceBundle.getBundle("ImageWindow"); // 资源绑定器(获取配置)
 
-    private final int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
-    private final int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度
+    //private final int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
+    //private final int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度
 
     private String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
     private File[] imageFiles = getListFiles(); // 存储所有图片文件的数组
@@ -101,7 +101,7 @@ public class ImageWindow extends JFrame implements ActionListener {
         getContentPane().add(panel);
 
         // 设置窗口大小和位置
-        setSize(windowWidth, windowHeight);
+        setSize(Integer.parseInt(config.getWindowWidth()), Integer.parseInt(config.getWindowHeight()));
         setLocationRelativeTo(null);
 
         // 添加关闭按钮事件(退出程序)
@@ -223,7 +223,7 @@ public class ImageWindow extends JFrame implements ActionListener {
             ImageIcon icon = new ImageIcon(imageFile.getCanonicalPath());
 
             // 裁剪图片
-            icon = cropIconH(icon, windowHeight - 100, maxImageWidth);
+            icon = cropIconH(icon, Integer.parseInt(config.getWindowHeight()) - 100, maxImageWidth);
             label.setIcon(icon);
 
             // label.setBorder(BorderFactory.createLineBorder(Color.pink));
@@ -366,8 +366,6 @@ public class ImageWindow extends JFrame implements ActionListener {
 //                ",\n nextButton=" + nextButton +
                 ",\n currentImageIndex=" + currentImageIndex +
                 ",\n BUNDLE=" + BUNDLE +
-                ",\n windowWidth=" + windowWidth +
-                ",\n windowHeight=" + windowHeight +
                 ",\n imageDirPath='" + imageDirPath + '\'' +
 //                ",\n imageFiles=" + Arrays.toString(imageFiles) +
                 ",\n imageLoop=" + imageLoop +

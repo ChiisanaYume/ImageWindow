@@ -93,7 +93,7 @@ public class IOUtil {
      * @return 文件(输入流 InputStream格式)
      */
     public static InputStream getInputStream(String filename) throws IOException {
-        return new FileInputStream(getFile(filename));
+        return Files.newInputStream(getFile(filename).toPath());
     }
 
 

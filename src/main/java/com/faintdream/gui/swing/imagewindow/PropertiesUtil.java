@@ -1,5 +1,6 @@
 package com.faintdream.gui.swing.imagewindow;
 
+import com.faintdream.gui.swing.temp.ReadConfigFromJar;
 import com.faintdream.tool.util.IOUtil;
 
 import java.io.*;
@@ -12,6 +13,8 @@ public class PropertiesUtil {
     private final Properties properties = new Properties();
     private File propertiesFile;
 
+    private InputStream propertiesStream;
+
     // 构造方法
     public PropertiesUtil() {
     }
@@ -19,15 +22,14 @@ public class PropertiesUtil {
 
     /**
      * 加载配置文件
-     * @param configFile 配置文件名
+     * @param configFile 配置文件名(注意配置文件要在类路径下)
      * @throws IOException IO异常
      * */
     public void load(String configFile) throws IOException{
-        // 加载配置文件
-        propertiesFile = IOUtil.getFile(configFile);
-        FileInputStream inputStream = new FileInputStream(propertiesFile);
-        properties.load(inputStream);
-        inputStream.close();
+        // 加载配置文件(直接从流中加载)
+        InputStream stream = getStream(configFile);
+        properties.load(stream);
+        stream.close();
     }
 
     /**
@@ -70,6 +72,12 @@ public class PropertiesUtil {
         outputStream.close();
     }
 
+    /**
+     * 获取输入流
+     * */
+    private InputStream getStream(String configFile){
+        return getClass().getClassLoader().getResourceAsStream(configFile);
+    }
     /**
      * getter & setter
      * */

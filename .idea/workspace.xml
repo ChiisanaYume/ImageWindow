@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="COMMIT 20230719">
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230718">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/ReadConfigFromJar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="D:\App\maven_workspace\maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../App/apache-maven-3.3.9" />
         <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\App\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -49,44 +55,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/BaiduSyncdisk/project/ImageWindow/src/test/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/study/ImageWindow/src/test/java/com/faintdream/tool/util",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\BaiduSyncdisk\project\ImageWindow\src\test\resources" />
+      <recent name="D:\study\ImageWindow\src\test\java\com\faintdream\tool\util" />
+      <recent name="D:\study\ImageWindow\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ImageWindow">
-    <configuration name="ConfigFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigFile" />
-      <module name="imagewindow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PropertiesUtilTest.loadTest">
     <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
-      <module name="imagewindow" />
+      <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.gui.swing.*" />
@@ -97,8 +95,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReadConfigFromJar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.temp.ReadConfigFromJar" />
+      <module name="ImageWindow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.swing.temp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImageWindow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigDataTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigDataTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imagewindow" />
+      <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
@@ -113,8 +139,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigFileTest.loadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imagewindow" />
+    <configuration name="PropertiesUtilTest.loadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
@@ -122,43 +148,33 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigFileTest" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.PropertiesUtilTest" />
       <option name="METHOD_NAME" value="loadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IOUtilTest.createNewFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imagewindow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.tool.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.tool.util" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.tool.util.IOUtilTest" />
-      <option name="METHOD_NAME" value="createNewFileTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
+      <item itemvalue="JUnit.ConfigDataTest" />
+      <item itemvalue="JUnit.ConfigDataTest.saveTest" />
+      <item itemvalue="应用程序.ImageWindow" />
+      <item itemvalue="应用程序.ReadConfigFromJar" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
+        <item itemvalue="应用程序.ReadConfigFromJar" />
         <item itemvalue="应用程序.ImageWindow" />
-        <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
         <item itemvalue="JUnit.ConfigDataTest.saveTest" />
-        <item itemvalue="JUnit.ConfigFileTest.loadTest" />
-        <item itemvalue="应用程序.ConfigFile" />
+        <item itemvalue="JUnit.ConfigDataTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="" />
       <created>1686034023381</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -180,10 +196,8 @@
       <workItem from="1689404162776" duration="1649000" />
       <workItem from="1689558447296" duration="5311000" />
       <workItem from="1689659722580" duration="2510000" />
-      <workItem from="1689669478340" duration="1415000" />
-      <workItem from="1689739016509" duration="4289000" />
-      <workItem from="1689747550948" duration="3154000" />
-      <workItem from="1689754855304" duration="640000" />
+      <workItem from="1689669478340" duration="975000" />
+      <workItem from="1689761322079" duration="6232000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -255,28 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689662219077</updated>
     </task>
-    <task id="LOCAL-00011" summary="COMMIT 20230718">
-      <created>1689670762307</created>
+    <task id="LOCAL-00011" summary="commit 20230718">
+      <created>1689682616981</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1689670762307</updated>
+      <updated>1689682616981</updated>
     </task>
-    <task id="LOCAL-00012" summary="COMMIT 20230719">
-      <created>1689745286053</created>
+    <task id="LOCAL-00012" summary="commit 20230718">
+      <created>1689694201197</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1689745286053</updated>
+      <updated>1689694201197</updated>
     </task>
-    <task id="LOCAL-00013" summary="COMMIT 20230719">
-      <created>1689751225440</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1689751225440</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +306,22 @@
     <MESSAGE value="COMMIT 20230715" />
     <MESSAGE value="COMMIT 20230717" />
     <MESSAGE value="COMMIT 20230718" />
-    <MESSAGE value="COMMIT 20230719" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230719" />
+    <MESSAGE value="commit 20230718" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20230718" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
