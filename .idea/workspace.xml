@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="COMMIT 20230718">
+    <list default="true" id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="COMMIT 20230719">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +183,8 @@
       <workItem from="1689558447296" duration="5311000" />
       <workItem from="1689659722580" duration="2510000" />
       <workItem from="1689669478340" duration="1415000" />
-      <workItem from="1689739016509" duration="4114000" />
+      <workItem from="1689739016509" duration="4289000" />
+      <workItem from="1689747550948" duration="3080000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -261,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689670762307</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="COMMIT 20230719">
+      <created>1689745286053</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689745286053</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +293,18 @@
     <MESSAGE value="COMMIT 20230715" />
     <MESSAGE value="COMMIT 20230717" />
     <MESSAGE value="COMMIT 20230718" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230718" />
+    <MESSAGE value="COMMIT 20230719" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230719" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

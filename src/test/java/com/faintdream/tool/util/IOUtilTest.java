@@ -70,6 +70,8 @@ public class IOUtilTest {
 
     @Test
     public void createNewFileTest() throws IOException {
-        IOUtil.createNewFile(new File("233.text"));
+        File file = new File("IOUtilTest.createNewFileTest.text");
+        IOUtil.createNewFile(file);
+        Assert.assertTrue(file.exists()); // 是否成功创建文件
     }
 }

@@ -4,6 +4,8 @@ import com.faintdream.tool.util.IOUtil;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class ConfigData {
 
@@ -75,7 +77,7 @@ public class ConfigData {
 
     /**
      * 从配置文件中读取配置
-     * */
+     */
     public void read() throws IOException {
         PropertiesUtil config = new PropertiesUtil();
         config.load(propertiesFilePath);
@@ -90,33 +92,43 @@ public class ConfigData {
 
     /**
      * 保存修改的配置
-     * */
+     */
     public void save() throws IOException {
         PropertiesUtil config = new PropertiesUtil();
+
+        // 如果不存在文件就创建它
+        try {
+            File file = new File(IOUtil.getClassPath() + File.separator + propertiesFilePath);
+            IOUtil.createNewFile(file);
+        } catch (Exception e) {
+            throw new IOException(e);
+        }
+
+
         config.setPropertiesFile(IOUtil.getFile(propertiesFilePath));
 
-        if(getWindowWidth()!=null){
-            config.put("windowWidth",getWindowWidth());
+        if (getWindowWidth() != null) {
+            config.put("windowWidth", getWindowWidth());
         }
 
-        if(getWindowHeight()!=null){
-            config.put("windowHeight",getWindowHeight());
+        if (getWindowHeight() != null) {
+            config.put("windowHeight", getWindowHeight());
         }
 
-        if(getIconPath()!=null){
-            config.put("iconPath",getIconPath());
+        if (getIconPath() != null) {
+            config.put("iconPath", getIconPath());
         }
 
-        if(getImageLoop()!=null){
-            config.put("imageLoop",getImageLoop());
+        if (getImageLoop() != null) {
+            config.put("imageLoop", getImageLoop());
         }
 
-        if(getImageDirPath()!=null){
-            config.put("imageDirPath",getImageDirPath());
+        if (getImageDirPath() != null) {
+            config.put("imageDirPath", getImageDirPath());
         }
 
-        if(getMaxImageWidth()!=null){
-            config.put("maxImageWidth",getMaxImageWidth());
+        if (getMaxImageWidth() != null) {
+            config.put("maxImageWidth", getMaxImageWidth());
         }
 
     }

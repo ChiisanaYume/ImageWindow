@@ -47,6 +47,9 @@ public class PropertiesUtil {
      */
     public void set(String key,String value) throws IOException {
         properties.setProperty(key,value);
+        if(!propertiesFile.exists()){
+            IOUtil.createNewFile(propertiesFile);
+        }
         save(propertiesFile);
     }
 
