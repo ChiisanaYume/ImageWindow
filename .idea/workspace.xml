@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4757c067-802a-42d0-930d-2f8737de4296" name="更改" comment="COMMIT 20230719">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <recent name="E:\BaiduSyncdisk\project\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IOUtilTest.createNewFileTest">
+  <component name="RunManager" selected="应用程序.ImageWindow">
     <configuration name="ConfigFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ConfigFile" />
       <module name="imagewindow" />
@@ -86,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FolderFileChooser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.FolderFileChooser" />
+    <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
       <module name="imagewindow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="PATTERN" value="com.faintdream.gui.swing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ImageWindow" />
         <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
         <item itemvalue="JUnit.ConfigDataTest.saveTest" />
         <item itemvalue="JUnit.ConfigFileTest.loadTest" />
         <item itemvalue="应用程序.ConfigFile" />
-        <item itemvalue="应用程序.FolderFileChooser" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +182,8 @@
       <workItem from="1689659722580" duration="2510000" />
       <workItem from="1689669478340" duration="1415000" />
       <workItem from="1689739016509" duration="4289000" />
-      <workItem from="1689747550948" duration="3080000" />
+      <workItem from="1689747550948" duration="3154000" />
+      <workItem from="1689754855304" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -270,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689745286053</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="COMMIT 20230719">
+      <created>1689751225440</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689751225440</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,16 +301,5 @@
     <MESSAGE value="COMMIT 20230718" />
     <MESSAGE value="COMMIT 20230719" />
     <option name="LAST_COMMIT_MESSAGE" value="COMMIT 20230719" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

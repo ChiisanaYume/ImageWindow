@@ -1,5 +1,6 @@
 package com.faintdream.gui.swing;
 
+import com.faintdream.gui.swing.imagewindow.ConfigData;
 import com.faintdream.gui.swing.imagewindow.ExitAction;
 import com.faintdream.gui.swing.imagewindow.GlobalData;
 
@@ -21,7 +22,10 @@ public class ImageWindow extends JFrame implements ActionListener {
     private JButton nextButton; // 下一张按钮
     private int currentImageIndex = 0; // 当前显示的图片在文件列表中的索引
 
-
+    /**
+     * 配置
+     * */
+    private final ConfigData config = new ConfigData();
     private final ResourceBundle BUNDLE = ResourceBundle.getBundle("ImageWindow"); // 资源绑定器(获取配置)
 
     private final int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
@@ -41,9 +45,13 @@ public class ImageWindow extends JFrame implements ActionListener {
     /**
      * 构造方法
      */
-    public ImageWindow() {
+    public ImageWindow() throws IOException {
+
         // 设置窗口标题
         super("图片浏览");
+
+        // 读取配置
+        config.read();
 
         // 全局UI设置
         setGlobalUI();
@@ -374,7 +382,7 @@ public class ImageWindow extends JFrame implements ActionListener {
      *
      * @param args 命令行参数
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new ImageWindow();
     }
 }
