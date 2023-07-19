@@ -7,6 +7,10 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class IOUtil {
 
@@ -39,27 +43,7 @@ public class IOUtil {
      * @return url
      */
     public static URL getURL(String filename) {
-        URL resourceURL = getClassLoader().getResource(filename);
-
-        // 假如url路径不存在,让它存在(创建一个文件)
-        if (resourceURL == null) {
-            try {
-                File classPath = new File(getURL("").toURI());
-                String filePath = classPath.getAbsolutePath()+File.separator + filename;
-                File file = new File(filePath);
-                boolean created = file.createNewFile();
-                // 文件创建成功
-                if(created){
-                    return getURL(filePath);
-                }
-                throw new IOException("url路径不存在,且无法创建文件");
-
-            } catch (URISyntaxException | IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
-        return resourceURL;
+        return getClassLoader().getResource(filename);
     }
 
     /**
@@ -112,4 +96,18 @@ public class IOUtil {
         return new FileInputStream(getFile(filename));
     }
 
+
+    /**
+     * 创建新文件
+     */
+    public static void createNewFile(File file) throws IOException {
+        Path path = file.toPath();
+
+        try {
+            Files.createFile(path);
+            System.out.println("File created successfully.");
+        } catch (FileAlreadyExistsException e) {
+            // 捕捉并忽略文件已经存在异常
+        }
+    }
 }

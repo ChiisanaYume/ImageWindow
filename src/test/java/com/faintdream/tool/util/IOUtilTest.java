@@ -67,4 +67,9 @@ public class IOUtilTest {
         ClassLoader classLoader = IOUtil.getClassLoader();
         System.out.println(classLoader);
     }
+
+    @Test
+    public void createNewFileTest() throws IOException {
+        IOUtil.createNewFile(new File("233.text"));
+    }
 }
