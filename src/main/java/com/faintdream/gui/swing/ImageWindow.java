@@ -34,9 +34,9 @@ public class ImageWindow extends JFrame implements ActionListener {
     private String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
     private File[] imageFiles = getListFiles(); // 存储所有图片文件的数组
 
-    private final boolean imageLoop = Boolean.parseBoolean(BUNDLE.getString("imageLoop")); // 图片是否循环播放
+    // private final boolean imageLoop = Boolean.parseBoolean(BUNDLE.getString("imageLoop")); // 图片是否循环播放
     // 显示图片的最大宽度(超过这个宽度会进行二次裁剪)
-    private final int maxImageWidth = Integer.parseInt(BUNDLE.getString("maxImageWidth")); // 显示图片的最大宽度
+    // private final int maxImageWidth = Integer.parseInt(BUNDLE.getString("maxImageWidth")); // 显示图片的最大宽度
 
     private final String iconPath = BUNDLE.getString("iconPath"); // 窗口图标路径
 
@@ -223,7 +223,7 @@ public class ImageWindow extends JFrame implements ActionListener {
             ImageIcon icon = new ImageIcon(imageFile.getCanonicalPath());
 
             // 裁剪图片
-            icon = cropIconH(icon, Integer.parseInt(config.getWindowHeight()) - 100, maxImageWidth);
+            icon = cropIconH(icon, Integer.parseInt(config.getWindowHeight()) - 100, Integer.parseInt(config.getMaxImageWidth()));
             label.setIcon(icon);
 
             // label.setBorder(BorderFactory.createLineBorder(Color.pink));
@@ -294,13 +294,13 @@ public class ImageWindow extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == prevButton) {          // 上一张按钮被点击
-            if (currentImageIndex <= 0 && imageLoop) {
+            if (currentImageIndex <= 0 && Boolean.parseBoolean(config.getImageLoop())) {
                 currentImageIndex = imageFiles.length;
             }
             showImage(currentImageIndex - 1);
         } else if (e.getSource() == nextButton) { // 下一张按钮被点击
 
-            if (currentImageIndex >= imageFiles.length - 1 && imageLoop) {
+            if (currentImageIndex >= imageFiles.length - 1 && Boolean.parseBoolean(config.getImageLoop())) {
                 currentImageIndex = -1;
             }
             showImage(currentImageIndex + 1);
@@ -359,20 +359,7 @@ public class ImageWindow extends JFrame implements ActionListener {
 
     @Override
     public String toString() {
-        return "ImageWindow{\n" +
-//                "menuBar=" + menuBar +
-//                ",\n label=" + label +
-//                ",\n prevButton=" + prevButton +
-//                ",\n nextButton=" + nextButton +
-                ",\n currentImageIndex=" + currentImageIndex +
-                ",\n BUNDLE=" + BUNDLE +
-                ",\n imageDirPath='" + imageDirPath + '\'' +
-//                ",\n imageFiles=" + Arrays.toString(imageFiles) +
-                ",\n imageLoop=" + imageLoop +
-                ",\n maxImageWidth=" + maxImageWidth +
-                ",\n iconPath='" + iconPath + '\'' +
-                ",\n globalData=" + globalData +
-                "\n}";
+        return null;
     }
 
     /**
