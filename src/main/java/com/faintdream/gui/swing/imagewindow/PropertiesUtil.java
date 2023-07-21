@@ -1,7 +1,6 @@
 package com.faintdream.gui.swing.imagewindow;
 
 
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -11,6 +10,7 @@ public class PropertiesUtil {
     /**
      * `onlyUpdateMemory` 仅仅在内存中生效,进行修改(更新)操作时不会更改配置文件 (`.properties`)
      */
+    private boolean onlyUpdateMemory = true;
     private final Properties properties = new Properties();
 
     // 构造方法
@@ -50,6 +50,10 @@ public class PropertiesUtil {
      */
     public void set(String key, String value) throws IOException {
         properties.setProperty(key, value);
+        if (!isOnlyUpdateMemory()) {
+            throw new IOException("暂时不支持修改配置文件");
+            // code
+        }
     }
 
     /**
@@ -74,5 +78,13 @@ public class PropertiesUtil {
      */
     public Properties getProperties() {
         return properties;
+    }
+
+    public boolean isOnlyUpdateMemory() {
+        return onlyUpdateMemory;
+    }
+
+    public void setOnlyUpdateMemory(boolean onlyUpdateMemory) {
+        this.onlyUpdateMemory = onlyUpdateMemory;
     }
 }

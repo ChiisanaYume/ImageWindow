@@ -73,5 +73,7 @@ public class IOUtilTest {
         File file = new File("IOUtilTest.createNewFileTest.text");
         IOUtil.createNewFile(file);
         Assert.assertTrue(file.exists()); // 是否成功创建文件
+        boolean deleted = file.delete();
+        Assert.assertTrue(deleted); // 是否成功删除文件
     }
 }

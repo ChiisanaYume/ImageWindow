@@ -2,6 +2,7 @@ package com.faintdream.gui.swing;
 
 import com.faintdream.gui.swing.imagewindow.ConfigData;
 import com.faintdream.gui.swing.imagewindow.ExitAction;
+import com.faintdream.gui.swing.imagewindow.FolderFileChooser;
 import com.faintdream.gui.swing.imagewindow.GlobalData;
 
 import javax.swing.*;
@@ -10,10 +11,11 @@ import java.awt.event.*;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.ResourceBundle;
 
-public class ImageWindow extends JFrame implements ActionListener {
+public class ImageWindow extends JFrame implements ActionListener, Serializable {
     private static final long serialVersionUID = 1L;
 
     private JMenuBar menuBar; // 菜单栏
@@ -32,7 +34,7 @@ public class ImageWindow extends JFrame implements ActionListener {
     //private final int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度
 
     private String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
-    private File[] imageFiles = getListFiles(); // 存储所有图片文件的数组
+    private File[] imageFiles; // 存储所有图片文件的数组
 
     // private final boolean imageLoop = Boolean.parseBoolean(BUNDLE.getString("imageLoop")); // 图片是否循环播放
     // 显示图片的最大宽度(超过这个宽度会进行二次裁剪)
@@ -56,11 +58,11 @@ public class ImageWindow extends JFrame implements ActionListener {
         // 全局UI设置
         setGlobalUI();
 
-        // 获取图片文件目录
-        imageFiles = getListFiles();
-
         // 创建标签
         label = new JLabel();
+
+        // 获取图片文件目录
+        imageFiles = getListFiles();
 
         // 显示第一张图片
         showImage(0);
@@ -94,7 +96,7 @@ public class ImageWindow extends JFrame implements ActionListener {
         getContentPane().add(panel);
 
         // 设置窗口图标
-        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource(iconPath)); // 加载图标
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource(config.getIconPath())); // 加载图标
         setIconImage(icon);
 
         // 向窗口的内容面板添加组件
@@ -116,7 +118,7 @@ public class ImageWindow extends JFrame implements ActionListener {
      * 获取图片文件目录
      */
     private File[] getListFiles() {
-        File imageDir = new File(imageDirPath);
+        File imageDir = new File(config.getImageDirPath());
         File[] files = imageDir.listFiles(new ImageFilter());
         if(files.length==0){ // 如果没有图片(显示一张默认图片)
             return imageDir.listFiles(new ImageFilter());
@@ -203,7 +205,20 @@ public class ImageWindow extends JFrame implements ActionListener {
         setJMenuBar(menuBar);
 
         // 事件
-        openFolderMenuItem.addActionListener(new FolderFileChooser());
+        openFolderMenuItem.addActionListener((event)->{
+            File file = FolderFileChooser.selectedFile();
+
+            if (file != null) {
+                imageDirPath = file.getAbsolutePath();
+            }
+            config.setImageDirPath(imageDirPath);
+
+            // 获取图片文件目录
+            imageFiles = getListFiles();
+
+            // 显示第一张图片
+            showImage(0);
+        });
         exitMenuItem.addActionListener(new ExitAction());
     }
 
@@ -225,9 +240,6 @@ public class ImageWindow extends JFrame implements ActionListener {
             // 裁剪图片
             icon = cropIconH(icon, Integer.parseInt(config.getWindowHeight()) - 100, Integer.parseInt(config.getMaxImageWidth()));
             label.setIcon(icon);
-
-            // label.setBorder(BorderFactory.createLineBorder(Color.pink));
-            // label.setAlignmentX(Component.CENTER_ALIGNMENT);
 
             currentImageIndex = index;
         } catch (IOException e) {
@@ -311,51 +323,11 @@ public class ImageWindow extends JFrame implements ActionListener {
     WindowListener windowListener = new WindowAdapter() {
         @Override
         public void windowClosing(WindowEvent e) {
-            // 处理关闭窗口事件的逻辑
-            System.out.println(ImageWindow.this.toString());
-            new ExitAction().exit(0);
+            ExitAction.exit(0);
         }
     };
 
-    class FolderFileChooser implements ActionListener {
 
-        public File selectedFile() {
-
-            // 创建文件选择器对象
-            JFileChooser fileChooser = new JFileChooser();
-
-            // 设置文件选择模式为仅选择文件夹
-            fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-
-            // 显示文件选择对话框
-            int result = fileChooser.showOpenDialog(null);
-
-            // 处理用户选择的操作
-            if (result == JFileChooser.APPROVE_OPTION) {
-                // 获取用户选择的文件夹
-                java.io.File selectedFolder = fileChooser.getSelectedFile();
-
-                // 打印文件夹路径（可根据需要进行其他处理）
-                System.out.println("选择的文件夹: " + selectedFolder.getAbsolutePath());
-
-                // 如果文件存在
-                if (selectedFolder.exists()) {
-                    return selectedFolder;
-                }
-            }
-
-            // 基本上永远执行不到这里
-            return null;
-        }
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            File file = selectedFile();
-            imageDirPath = file.getAbsolutePath();
-            imageFiles = getListFiles();
-            showImage(0);
-        }
-    }
 
     @Override
     public String toString() {

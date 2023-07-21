@@ -10,7 +10,7 @@ public class ExitAction implements ActionListener {
         exit(0);
     }
 
-    public void exit(Integer i) {
+    public static void exit(Integer i) {
         System.out.println("退出程序【" + i + "】");
         System.exit(i);
     }

@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230719">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/FolderFileChooser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bug.md" beforeDir="false" afterPath="$PROJECT_DIR$/Bug.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOUtilTest.createNewFileTest.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ExitAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ExitAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d6361aa8-d66b-4a63-a363-df64ff63f278" />
+        <option name="url" value="git@github.com:ChiisanaYume/ImageWindow" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -31,7 +52,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\App\maven_workspace\maven_repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../App/apache-maven-3.3.9" />
+        <option name="mavenHome" value="D:/app/apache-maven-3.3.9" />
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\App\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -78,10 +99,12 @@
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ImageWindow">
+  <component name="RunManager" selected="JUnit.IOUtilTest.createNewFileTest">
     <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
-      <module name="ImageWindow" />
+      <module name="imagewindow" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.gui.swing.*" />
@@ -92,15 +115,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadConfigFromJar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.temp.ReadConfigFromJar" />
-      <module name="ImageWindow" />
+    <configuration name="IOUtilTest.createNewFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="imagewindow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.temp.*" />
+          <option name="PATTERN" value="com.faintdream.tool.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.tool.util" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.tool.util.IOUtilTest" />
+      <option name="METHOD_NAME" value="createNewFileTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,19 +180,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
       <item itemvalue="应用程序.ImageWindow" />
-      <item itemvalue="应用程序.ReadConfigFromJar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
         <item itemvalue="应用程序.ImageWindow" />
         <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
-        <item itemvalue="应用程序.ReadConfigFromJar" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +224,8 @@
       <workItem from="1689761322079" duration="6337000" />
       <workItem from="1689781765303" duration="2007000" />
       <workItem from="1689848943545" duration="2644000" />
+      <workItem from="1689915054536" duration="1773000" />
+      <workItem from="1689916842234" duration="4170000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -336,7 +364,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java</url>
-          <line>34</line>
+          <line>35</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

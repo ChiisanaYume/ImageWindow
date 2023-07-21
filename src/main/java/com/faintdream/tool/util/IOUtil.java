@@ -1,16 +1,17 @@
 package com.faintdream.tool.util;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+/**
+ * 尝试从类路径去加载文件
+ * @author faintdream
+ * @version 1.0
+ * */
 
 public class IOUtil {
 
