@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230719">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/FolderFileChooser.java" afterDir="false" />
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230721">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bug.md" beforeDir="false" afterPath="$PROJECT_DIR$/Bug.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOUtilTest.createNewFileTest.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ExitAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ExitAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/tool/util/IOUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/tool/util/IOUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +216,7 @@
       <workItem from="1689781765303" duration="2007000" />
       <workItem from="1689848943545" duration="2644000" />
       <workItem from="1689915054536" duration="1773000" />
-      <workItem from="1689916842234" duration="4170000" />
+      <workItem from="1689916842234" duration="5384000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -332,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689783778772</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="commit 20230721">
+      <created>1689923747666</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1689923747666</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,14 +355,15 @@
     <MESSAGE value="COMMIT 20230718" />
     <MESSAGE value="commit 20230718" />
     <MESSAGE value="commit 20230719" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20230719" />
+    <MESSAGE value="commit 20230721" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20230721" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

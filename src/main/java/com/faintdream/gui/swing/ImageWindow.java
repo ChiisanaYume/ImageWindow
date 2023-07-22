@@ -73,7 +73,6 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
         // 组装(显示)菜单栏
         showMenuBar();
 
-
         // 组合成面板并添加到窗口中
         JPanel panel = new JPanel();
 
