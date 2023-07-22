@@ -1,9 +1,6 @@
 package com.faintdream.gui.swing;
 
-import com.faintdream.gui.swing.imagewindow.ConfigData;
-import com.faintdream.gui.swing.imagewindow.ExitAction;
-import com.faintdream.gui.swing.imagewindow.FolderFileChooser;
-import com.faintdream.gui.swing.imagewindow.GlobalData;
+import com.faintdream.gui.swing.imagewindow.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,7 +23,7 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
 
     /**
      * 配置
-     * */
+     */
     private final ConfigData config = new ConfigData();
     private final ResourceBundle BUNDLE = ResourceBundle.getBundle("ImageWindow"); // 资源绑定器(获取配置)
 
@@ -119,7 +116,7 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
     private File[] getListFiles() {
         File imageDir = new File(config.getImageDirPath());
         File[] files = imageDir.listFiles(new ImageFilter());
-        if(files.length==0){ // 如果没有图片(显示一张默认图片)
+        if (files.length == 0) { // 如果没有图片(显示一张默认图片)
             return imageDir.listFiles(new ImageFilter());
         }
         return imageDir.listFiles(new ImageFilter());
@@ -204,7 +201,33 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
         setJMenuBar(menuBar);
 
         // 事件
-        openFolderMenuItem.addActionListener((event)->{
+        openFIleMenuItem.addActionListener((event) -> {
+            File file = ImageFileChooser.selectedFile();
+
+            // 没有选择文件
+            if(file == null || !file.exists()){
+                return;
+            }
+
+            // 获取图片父目录
+            imageDirPath = file.getParent();
+            config.setImageDirPath(imageDirPath);
+
+            // 获取图片文件目录
+            imageFiles = getListFiles();
+
+            System.out.println(imageFiles);
+
+            // 找到图片的下标，显示这张图片
+            for (int i = 0; i < imageFiles.length; i++) {
+                if(file.equals(imageFiles[i])){
+                    showImage(i);
+                }
+            }
+            // showImage(0);
+
+        });
+        openFolderMenuItem.addActionListener((event) -> {
             File file = FolderFileChooser.selectedFile();
 
             if (file != null) {
@@ -325,7 +348,6 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
             ExitAction.exit(0);
         }
     };
-
 
 
     @Override

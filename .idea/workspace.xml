@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230721">
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230722">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageFileChooser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bug.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Exception.info.md" beforeDir="false" afterPath="$PROJECT_DIR$/Exception.info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +91,24 @@
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\BaiduSyncdisk\project\ImageWindow" />
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IOUtilTest.createNewFileTest">
+  <component name="RunManager" selected="应用程序.ImageWindow">
+    <configuration name="ImageFileChooser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageFileChooser" />
+      <module name="imagewindow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -138,22 +156,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropertiesUtilTest.loadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ImageWindow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.PropertiesUtilTest" />
-      <option name="METHOD_NAME" value="loadTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PropertiesUtilTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImageWindow" />
       <extension name="coverage">
@@ -174,16 +176,16 @@
       <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
-      <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
+      <item itemvalue="应用程序.ImageFileChooserExample" />
       <item itemvalue="应用程序.ImageWindow" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
         <item itemvalue="应用程序.ImageWindow" />
+        <item itemvalue="应用程序.ImageFileChooserExample" />
+        <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
-        <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +219,7 @@
       <workItem from="1689848943545" duration="2644000" />
       <workItem from="1689915054536" duration="1773000" />
       <workItem from="1689916842234" duration="5384000" />
+      <workItem from="1690001080806" duration="2321000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -330,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689923747666</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commit 20230722">
+      <created>1690001176477</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1690001176477</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,14 +366,15 @@
     <MESSAGE value="commit 20230718" />
     <MESSAGE value="commit 20230719" />
     <MESSAGE value="commit 20230721" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20230721" />
+    <MESSAGE value="commit 20230722" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20230722" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java</url>
-          <line>36</line>
+          <line>33</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
