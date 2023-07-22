@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230722">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/FileChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/FileChooser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/FolderAndImageFileChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/FolderAndImageFileChooser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/MyFrame01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/MyFrame01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/暂无数据.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/暂无数据.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,10 +88,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\BaiduSyncdisk\project\ImageWindow\src\main\resources" />
       <recent name="D:\study\ImageWindow\src\test\java\com\faintdream\tool\util" />
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\BaiduSyncdisk\project\ImageWindow\src\main\java\com\faintdream\gui\swing\temp" />
       <recent name="E:\BaiduSyncdisk\project\ImageWindow" />
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
@@ -217,6 +222,7 @@
       <workItem from="1689915054536" duration="1773000" />
       <workItem from="1689916842234" duration="5384000" />
       <workItem from="1690001080806" duration="4750000" />
+      <workItem from="1690009524122" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -344,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690003675173</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="commit 20230722">
+      <created>1690009997934</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690009997934</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

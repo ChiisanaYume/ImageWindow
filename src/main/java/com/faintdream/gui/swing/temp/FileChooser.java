@@ -1,4 +1,4 @@
-package com.faintdream.gui.swing;
+package com.faintdream.gui.swing.temp;
 
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
