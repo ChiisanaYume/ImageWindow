@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230722">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageFileChooser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bug.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Exception.info.md" beforeDir="false" afterPath="$PROJECT_DIR$/Exception.info.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +174,12 @@
       <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
-      <item itemvalue="应用程序.ImageFileChooserExample" />
+      <item itemvalue="应用程序.ImageFileChooser" />
       <item itemvalue="应用程序.ImageWindow" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.ImageWindow" />
-        <item itemvalue="应用程序.ImageFileChooserExample" />
         <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
@@ -219,7 +216,7 @@
       <workItem from="1689848943545" duration="2644000" />
       <workItem from="1689915054536" duration="1773000" />
       <workItem from="1689916842234" duration="5384000" />
-      <workItem from="1690001080806" duration="2321000" />
+      <workItem from="1690001080806" duration="4750000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -340,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690001176477</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="commit 20230722">
+      <created>1690003675173</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690003675173</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,17 +372,6 @@
     <MESSAGE value="commit 20230721" />
     <MESSAGE value="commit 20230722" />
     <option name="LAST_COMMIT_MESSAGE" value="commit 20230722" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

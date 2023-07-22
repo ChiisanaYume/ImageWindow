@@ -25,20 +25,7 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
      * 配置
      */
     private final ConfigData config = new ConfigData();
-    private final ResourceBundle BUNDLE = ResourceBundle.getBundle("ImageWindow"); // 资源绑定器(获取配置)
-
-    //private final int windowWidth = Integer.parseInt(BUNDLE.getString("windowWidth")); // 窗口默认宽度
-    //private final int windowHeight = Integer.parseInt(BUNDLE.getString("windowHeight")); // 窗口默认高度
-
-    private String imageDirPath = BUNDLE.getString("imageDirPath"); // 图片文件路径
     private File[] imageFiles; // 存储所有图片文件的数组
-
-    // private final boolean imageLoop = Boolean.parseBoolean(BUNDLE.getString("imageLoop")); // 图片是否循环播放
-    // 显示图片的最大宽度(超过这个宽度会进行二次裁剪)
-    // private final int maxImageWidth = Integer.parseInt(BUNDLE.getString("maxImageWidth")); // 显示图片的最大宽度
-
-    private final String iconPath = BUNDLE.getString("iconPath"); // 窗口图标路径
-
     private GlobalData globalData = new GlobalData();
 
     /**
@@ -72,7 +59,6 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
 
         // 组合成面板并添加到窗口中
         JPanel panel = new JPanel();
-
 
         // 设置布局为BoxLayout(盒模型布局)
         BoxLayout layout = new BoxLayout(panel, BoxLayout.X_AXIS);
@@ -116,10 +102,10 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
     private File[] getListFiles() {
         File imageDir = new File(config.getImageDirPath());
         File[] files = imageDir.listFiles(new ImageFilter());
-        if (files.length == 0) { // 如果没有图片(显示一张默认图片)
+        if (files != null && files.length == 0) { // 如果没有图片(显示一张默认图片)
             return imageDir.listFiles(new ImageFilter());
         }
-        return imageDir.listFiles(new ImageFilter());
+        return files;
 
     }
 
@@ -201,6 +187,7 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
         setJMenuBar(menuBar);
 
         // 事件
+        // 打开文件
         openFIleMenuItem.addActionListener((event) -> {
             File file = ImageFileChooser.selectedFile();
 
@@ -210,13 +197,10 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
             }
 
             // 获取图片父目录
-            imageDirPath = file.getParent();
-            config.setImageDirPath(imageDirPath);
+            config.setImageDirPath(file.getParent());
 
             // 获取图片文件目录
             imageFiles = getListFiles();
-
-            System.out.println(imageFiles);
 
             // 找到图片的下标，显示这张图片
             for (int i = 0; i < imageFiles.length; i++) {
@@ -227,13 +211,14 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
             // showImage(0);
 
         });
+
+        // 打开文件夹
         openFolderMenuItem.addActionListener((event) -> {
             File file = FolderFileChooser.selectedFile();
 
             if (file != null) {
-                imageDirPath = file.getAbsolutePath();
+                config.setImageDirPath(file.getAbsolutePath());
             }
-            config.setImageDirPath(imageDirPath);
 
             // 获取图片文件目录
             imageFiles = getListFiles();
@@ -241,6 +226,8 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
             // 显示第一张图片
             showImage(0);
         });
+
+        // 退出
         exitMenuItem.addActionListener(new ExitAction());
     }
 

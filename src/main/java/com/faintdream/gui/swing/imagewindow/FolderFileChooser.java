@@ -26,16 +26,15 @@ public class FolderFileChooser implements ActionListener {
             java.io.File selectedFolder = fileChooser.getSelectedFile();
 
             // 打印文件夹路径（可根据需要进行其他处理）
-            System.out.println("选择的文件夹: " + selectedFolder.getAbsolutePath());
+            // System.out.println("选择的文件夹: " + selectedFolder.getAbsolutePath());
 
             // 如果文件存在
             if (selectedFolder.exists()) {
-                return selectedFolder;
+                return selectedFolder.getAbsoluteFile();
             }
         }
 
-        // 基本上永远执行不到这里
-        ExitAction.exit(1);
+        // 没有选择任何文件
         return null;
     }
 
