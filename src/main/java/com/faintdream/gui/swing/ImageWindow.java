@@ -193,7 +193,7 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
 
             // 没有选择文件
             if(file == null || !file.exists()){
-                return;
+                return; // 无事发生
             }
 
             // 获取图片父目录
@@ -216,9 +216,12 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
         openFolderMenuItem.addActionListener((event) -> {
             File file = FolderFileChooser.selectedFile();
 
-            if (file != null) {
-                config.setImageDirPath(file.getAbsolutePath());
+            // 没有选择文件
+            if(file == null || !file.exists()){
+                return; // 无事发生
             }
+
+            config.setImageDirPath(file.getAbsolutePath());
 
             // 获取图片文件目录
             imageFiles = getListFiles();

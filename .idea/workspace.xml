@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230722">
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230720">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/CheckFileSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/FileSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/ModifyJarFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/FileChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/FileChooser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/FolderAndImageFileChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/FolderAndImageFileChooser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/MyFrame01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/MyFrame01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/暂无数据.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/temp/暂无数据.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/ImageWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -48,7 +49,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\App\maven_workspace\maven_repository" />
-        <option name="mavenHome" value="D:/app/apache-maven-3.3.9" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../app/apache-maven-3.3.9" />
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\App\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -69,25 +70,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/study/ImageWindow/src/test/java/com/faintdream/tool/util&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/study/ImageWindow/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\ImageWindow\src\main\resources" />
       <recent name="E:\BaiduSyncdisk\project\ImageWindow\src\main\resources" />
       <recent name="D:\study\ImageWindow\src\test\java\com\faintdream\tool\util" />
       <recent name="D:\study\ImageWindow\src\test\resources" />
@@ -98,13 +100,15 @@
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ImageWindow">
-    <configuration name="ImageFileChooser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageFileChooser" />
-      <module name="imagewindow" />
+  <component name="RunManager" selected="应用程序.ModifyJarFile">
+    <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
+      <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="PATTERN" value="com.faintdream.gui.swing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,14 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
-      <module name="imagewindow" />
+    <configuration name="ModifyJarFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.temp.ModifyJarFile" />
+      <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.*" />
+          <option name="PATTERN" value="com.faintdream.gui.swing.temp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +181,12 @@
       <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
-      <item itemvalue="应用程序.ImageFileChooser" />
+      <item itemvalue="应用程序.ModifyJarFile" />
       <item itemvalue="应用程序.ImageWindow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ModifyJarFile" />
         <item itemvalue="应用程序.ImageWindow" />
         <item itemvalue="JUnit.IOUtilTest.createNewFileTest" />
         <item itemvalue="JUnit.PropertiesUtilTest.setTest" />
