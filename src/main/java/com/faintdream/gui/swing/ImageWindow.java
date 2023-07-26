@@ -9,7 +9,9 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.Serializable;
+import java.net.URISyntaxException;
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class ImageWindow extends JFrame implements ActionListener, Serializable {
@@ -103,7 +105,8 @@ public class ImageWindow extends JFrame implements ActionListener, Serializable 
         File imageDir = new File(config.getImageDirPath());
         File[] files = imageDir.listFiles(new ImageFilter());
         if (files != null && files.length == 0) { // 如果没有图片(显示一张默认图片)
-            return imageDir.listFiles(new ImageFilter());
+            //
+            System.out.println("如果没有图片(显示一张默认图片");
         }
         return files;
 

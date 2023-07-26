@@ -11,7 +11,7 @@ public enum FileSystem {
     LINUX(2),
     MAC(3);
 
-    private int value;
+    private final int value;
 
     FileSystem(int value) {
         this.value = value;
