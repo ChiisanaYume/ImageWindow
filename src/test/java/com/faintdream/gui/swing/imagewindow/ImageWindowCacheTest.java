@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class ImageWindowCacheTest {
     @Test
-    public void getFileSystem(){
+    public void getFileSystem() {
         ImageWindowCache cache = new ImageWindowCache();
         FileSystem fileSystem = cache.getFileSystem();
         System.out.println(fileSystem);
@@ -23,15 +23,21 @@ public class ImageWindowCacheTest {
     }
 
     @Test
-    public void createNewFileTest() throws IOException{
-        File file = new File("C:\\Program Files\\ImageWindow.properties");
+    public void createNewFileTest() throws IOException {
+
         ImageWindowCache cache = new ImageWindowCache();
-        cache.createNewFile(file);
-
-        Assert.assertTrue(file.exists());
-
-        if (file.exists()){
-            Assert.assertTrue(file.delete());
+        File file = new File("C:\\Program Files\\ImageWindow.properties");
+        switch (cache.getFileSystem()) {
+            case WINDOWS:
+                cache.createNewFile(file);
+                Assert.assertTrue(file.exists());
+                if (file.exists()) {
+                    Assert.assertTrue(file.delete());
+                }
+                break;
+            case LINUX:
+                break;
         }
+
     }
 }
