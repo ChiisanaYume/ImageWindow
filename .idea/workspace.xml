@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230720">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/CreateNewFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/ImageWindowCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/ImageWindowCacheTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230727" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +219,7 @@
       <workItem from="1689916842234" duration="5384000" />
       <workItem from="1690001080806" duration="4750000" />
       <workItem from="1690009524122" duration="1713000" />
-      <workItem from="1690444366008" duration="3017000" />
+      <workItem from="1690444366008" duration="3755000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -366,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690361999525</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="commit 20230727">
+      <created>1690447522781</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1690447522781</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +396,8 @@
     <MESSAGE value="commit 20230721" />
     <MESSAGE value="commit 20230722" />
     <MESSAGE value="commit 20230720" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20230720" />
+    <MESSAGE value="commit 20230727" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20230727" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
