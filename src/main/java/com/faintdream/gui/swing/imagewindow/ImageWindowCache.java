@@ -13,13 +13,13 @@ import java.util.Properties;
  * @author faintdream
  * @version 1.0
  */
-public class ImageWindowCache implements CheckFileSystem,CreateNewFile {
+public class ImageWindowCache implements CheckFileSystem, CreateNewFile,DeleteDirectory {
 
     // File cacheFile = new File("C:\\Program Files\\");
 
     /**
      * 核心配置文件路径
-     * */
+     */
     File coreProperties;
     Path parentPath;
 
@@ -27,9 +27,9 @@ public class ImageWindowCache implements CheckFileSystem,CreateNewFile {
      * 缓存文件
      */
     public void cacheFile() throws IOException {
-        switch (getFileSystem()){
+        switch (getFileSystem()) {
             case WINDOWS:
-                coreProperties = new File("C:\\Program Files\\imageWindow\\ImageWindow.properties");
+                coreProperties = new File("C:\\Program Files\\ImageWindow\\ImageWindow.properties");
                 break;
             case LINUX:
                 coreProperties = new File("/usr/bin/imageWindow/ImageWindow.properties");
@@ -74,13 +74,17 @@ public class ImageWindowCache implements CheckFileSystem,CreateNewFile {
 
     /**
      * 创建新文件
+     *
      * @param file 文件名(路径)
      * @throws IOException IO异常
-     * */
+     */
     @Override
     public void createNewFile(File file) throws IOException {
 
         Path path = file.toPath();
+        if (!path.getParent().toFile().exists()) {
+            Files.createDirectories(path.getParent());
+        }
         try {
             Files.createFile(path);
             // System.out.println("File created successfully.");
@@ -88,4 +92,19 @@ public class ImageWindowCache implements CheckFileSystem,CreateNewFile {
             // 捕捉并忽略文件已经存在异常
         }
     }
+
+    @Override
+    public  void deleteDirectory(File file) {
+        if (file.isDirectory()) {
+            File[] files = file.listFiles();
+            if (files != null) {
+                for (File subFile : files) {
+                    deleteDirectory(subFile);
+                }
+            }
+        }
+        file.delete();
+        // System.out.println("File deleted.");
+    }
+
 }

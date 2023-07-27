@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230727" />
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230723">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/DeleteDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/ImageWindowCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/ImageWindowCacheTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,31 +99,34 @@
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImageWindowCacheTest.createNewFileTest">
-    <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
+  <component name="RunManager" selected="JUnit.ImageWindowCacheTest.cacheFileTest (1)">
+    <configuration name="ImageWindowCacheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.*" />
+          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageWindowCacheTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModifyJarFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.temp.ModifyJarFile" />
+    <configuration name="ImageWindowCacheTest.cacheFileTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.temp.*" />
+          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageWindowCacheTest" />
+      <option name="METHOD_NAME" value="cacheFileTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,6 +142,22 @@
       <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
       <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageWindowCacheTest" />
       <option name="METHOD_NAME" value="cacheFileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageWindowCacheTest.createNewFileTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImageWindow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageWindowCacheTest" />
+      <option name="METHOD_NAME" value="createNewFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,36 +179,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageWindowCacheTest.getFileSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imagewindow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageWindowCacheTest" />
-      <option name="METHOD_NAME" value="getFileSystem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.ImageWindowCacheTest" />
+      <item itemvalue="JUnit.ImageWindowCacheTest.cacheFileTest (1)" />
+      <item itemvalue="JUnit.ImageWindowCacheTest.createNewFileTest (1)" />
       <item itemvalue="JUnit.ImageWindowCacheTest.cacheFileTest" />
       <item itemvalue="JUnit.ImageWindowCacheTest.createNewFileTest" />
-      <item itemvalue="JUnit.ImageWindowCacheTest.getFileSystem" />
-      <item itemvalue="应用程序.ModifyJarFile" />
-      <item itemvalue="应用程序.ImageWindow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImageWindowCacheTest.cacheFileTest (1)" />
+        <item itemvalue="JUnit.ImageWindowCacheTest.createNewFileTest (1)" />
+        <item itemvalue="JUnit.ImageWindowCacheTest" />
         <item itemvalue="JUnit.ImageWindowCacheTest.createNewFileTest" />
         <item itemvalue="JUnit.ImageWindowCacheTest.cacheFileTest" />
-        <item itemvalue="JUnit.ImageWindowCacheTest.getFileSystem" />
-        <item itemvalue="应用程序.ModifyJarFile" />
-        <item itemvalue="应用程序.ImageWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +229,7 @@
       <workItem from="1690001080806" duration="4750000" />
       <workItem from="1690009524122" duration="1713000" />
       <workItem from="1690444366008" duration="3755000" />
+      <workItem from="1690501117774" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -398,17 +408,6 @@
     <MESSAGE value="commit 20230720" />
     <MESSAGE value="commit 20230727" />
     <option name="LAST_COMMIT_MESSAGE" value="commit 20230727" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
