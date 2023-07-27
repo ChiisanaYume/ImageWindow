@@ -1,6 +1,11 @@
 package com.faintdream.gui.swing.imagewindow;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Properties;
 
 /**
  * 缓存：
@@ -8,26 +13,40 @@ import java.io.File;
  * @author faintdream
  * @version 1.0
  */
-public class ImageWindowCache implements CheckFileSystem {
+public class ImageWindowCache implements CheckFileSystem,CreateNewFile {
 
-    File cacheFile = new File("C:\\Program Files\\");
+    // File cacheFile = new File("C:\\Program Files\\");
+
+    /**
+     * 核心配置文件路径
+     * */
+    File coreProperties;
+    Path parentPath;
 
     /**
      * 缓存文件
      */
-    private void Cache() {
+    public void cacheFile() throws IOException {
         switch (getFileSystem()){
             case WINDOWS:
-                cacheFile = new File("C:\\Program Files\\imageWindow\\");
+                coreProperties = new File("C:\\Program Files\\imageWindow\\ImageWindow.properties");
                 break;
             case LINUX:
-                cacheFile = new File("/usr/bin/imageWindow");
+                coreProperties = new File("/usr/bin/imageWindow/ImageWindow.properties");
                 break;
             case MAC:
                 break;
             case OTHER:
         }
 
+        // 文件不存在,创建文件
+        createNewFile(coreProperties);
+
+        PropertiesUtil propertiesUtil = new PropertiesUtil();
+        propertiesUtil.load("ImageWindow.properties");
+        Properties properties = propertiesUtil.getProperties();
+
+        System.out.println(properties);
     }
 
     /**
@@ -51,5 +70,22 @@ public class ImageWindowCache implements CheckFileSystem {
             return FileSystem.OTHER;
         }
 
+    }
+
+    /**
+     * 创建新文件
+     * @param file 文件名(路径)
+     * @throws IOException IO异常
+     * */
+    @Override
+    public void createNewFile(File file) throws IOException {
+
+        Path path = file.toPath();
+        try {
+            Files.createFile(path);
+            // System.out.println("File created successfully.");
+        } catch (FileAlreadyExistsException e) {
+            // 捕捉并忽略文件已经存在异常
+        }
     }
 }
