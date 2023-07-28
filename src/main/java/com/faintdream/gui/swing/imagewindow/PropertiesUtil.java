@@ -1,8 +1,8 @@
 package com.faintdream.gui.swing.imagewindow;
 
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.nio.file.Files;
 import java.util.Properties;
 
 public class PropertiesUtil {
@@ -12,6 +12,8 @@ public class PropertiesUtil {
      */
     private boolean onlyUpdateMemory = true;
     private final Properties properties = new Properties();
+
+    private File propertiesFile;
 
     // 构造方法
     public PropertiesUtil() {
@@ -51,8 +53,9 @@ public class PropertiesUtil {
     public void set(String key, String value) throws IOException {
         properties.setProperty(key, value);
         if (!isOnlyUpdateMemory()) {
-            throw new IOException("暂时不支持修改配置文件");
+            // throw new IOException("暂时不支持修改配置文件");
             // code
+            save(propertiesFile);
         }
     }
 
@@ -74,6 +77,21 @@ public class PropertiesUtil {
     }
 
     /**
+     * 保存 properties文件
+     */
+    public void save(File propertiesFile) throws IOException {
+
+        propertiesFile = propertiesFile.getAbsoluteFile();
+
+        try (OutputStream output = Files.newOutputStream(propertiesFile.toPath())) {
+            properties.store(output, "Example properties file");
+
+        } catch (IOException e) {
+            throw new IOException(e);
+        }
+    }
+
+    /**
      * getter & setter
      */
     public Properties getProperties() {
@@ -86,5 +104,17 @@ public class PropertiesUtil {
 
     public void setOnlyUpdateMemory(boolean onlyUpdateMemory) {
         this.onlyUpdateMemory = onlyUpdateMemory;
+    }
+
+    public void setConfigFile(File configFile) {
+        this.propertiesFile = configFile;
+    }
+
+    public File getPropertiesFile() {
+        return propertiesFile;
+    }
+
+    public void setPropertiesFile(File propertiesFile) {
+        this.propertiesFile = propertiesFile;
     }
 }

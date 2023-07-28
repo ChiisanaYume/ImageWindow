@@ -4,7 +4,9 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 
 public class PropertiesUtilTest {
     @Test
@@ -59,5 +61,19 @@ public class PropertiesUtilTest {
         String s = propertiesUtil.get(key);
 
         Assert.assertEquals(s,value);
+    }
+
+    @Test
+    public void setTest2() throws IOException {
+        PropertiesUtil propertiesUtil = new PropertiesUtil();
+        propertiesUtil.load("ImageWindow.properties");
+
+        File file = new File("setTest2.properties");
+
+        propertiesUtil.setOnlyUpdateMemory(false);
+        propertiesUtil.setConfigFile(file);
+        //Files.createFile(new File("test.properties").toPath());
+        propertiesUtil.set("Test1","sdfsdffsd");
+
     }
 }

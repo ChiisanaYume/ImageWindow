@@ -21,7 +21,6 @@ public class ImageWindowCache implements CheckFileSystem, CreateNewFile,DeleteDi
      * 核心配置文件路径
      */
     File coreProperties;
-    Path parentPath;
 
     /**
      * 缓存文件
@@ -47,6 +46,7 @@ public class ImageWindowCache implements CheckFileSystem, CreateNewFile,DeleteDi
         Properties properties = propertiesUtil.getProperties();
 
         System.out.println(properties);
+
     }
 
     /**
