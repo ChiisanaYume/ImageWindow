@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230723">
+    <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230728">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690447522781</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="commit 20230728">
+      <created>1690531984038</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1690531984038</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +411,8 @@
     <MESSAGE value="commit 20230722" />
     <MESSAGE value="commit 20230720" />
     <MESSAGE value="commit 20230727" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20230727" />
+    <MESSAGE value="commit 20230728" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20230728" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

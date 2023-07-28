@@ -9,10 +9,11 @@ public class PropertiesUtil {
 
     /**
      * `onlyUpdateMemory` 仅仅在内存中生效,进行修改(更新)操作时不会更改配置文件 (`.properties`)
+     * `properties` 对象内部维护的 properties对象(只读)
+     * `propertiesFile` 与properties 对应的 properties配置文件(`.properties`)的路径
      */
     private boolean onlyUpdateMemory = true;
     private final Properties properties = new Properties();
-
     private File propertiesFile;
 
     // 构造方法
@@ -31,6 +32,14 @@ public class PropertiesUtil {
         InputStream stream = getStream(configFile);
         properties.load(stream);
         stream.close();
+    }
+
+    /**
+     *
+     * */
+    public void load(File configFile){
+        // 加载配置文件
+
     }
 
     /**
@@ -76,20 +85,28 @@ public class PropertiesUtil {
         return getClass().getClassLoader().getResourceAsStream(configFile);
     }
 
+    private InputStream getStream(File propertiesFile){
+        return null;
+    }
+
     /**
      * 保存 properties文件
+     * @param propertiesFile properties文件
+     * @throws IOException
      */
     public void save(File propertiesFile) throws IOException {
 
         propertiesFile = propertiesFile.getAbsoluteFile();
 
         try (OutputStream output = Files.newOutputStream(propertiesFile.toPath())) {
-            properties.store(output, "Example properties file");
+            properties.store(output, getClass().getName());
 
         } catch (IOException e) {
             throw new IOException(e);
         }
     }
+
+
 
     /**
      * getter & setter
