@@ -35,11 +35,16 @@ public class PropertiesUtil {
     }
 
     /**
+     * 加载配置文件
      *
-     * */
-    public void load(File configFile){
+     * @param configFile 配置文件名
+     * @throws IOException IO异常
+     */
+    public void load(File configFile) throws IOException {
         // 加载配置文件
-
+        InputStream stream = getStream(configFile);
+        properties.load(stream);
+        stream.close();
     }
 
     /**
@@ -85,8 +90,8 @@ public class PropertiesUtil {
         return getClass().getClassLoader().getResourceAsStream(configFile);
     }
 
-    private InputStream getStream(File propertiesFile){
-        return null;
+    private InputStream getStream(File propertiesFile) throws IOException {
+        return Files.newInputStream(propertiesFile.toPath());
     }
 
     /**
