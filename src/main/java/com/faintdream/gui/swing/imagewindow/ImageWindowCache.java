@@ -39,13 +39,11 @@ public class ImageWindowCache implements CheckFileSystem, CreateNewFile,DeleteDi
         }
 
         // 文件不存在,创建文件
-        createNewFile(coreProperties);
+        // createNewFile(coreProperties);
 
         PropertiesUtil propertiesUtil = new PropertiesUtil();
         propertiesUtil.load("ImageWindow.properties");
-        Properties properties = propertiesUtil.getProperties();
-
-        System.out.println(properties);
+        propertiesUtil.save(coreProperties);
 
     }
 

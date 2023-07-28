@@ -16,14 +16,6 @@ public class PropertiesUtilTest {
     }
 
     @Test
-    public void loadTest2() throws IOException {
-        File file = new File("ImageWindow.properties");
-        System.out.println(file.getAbsoluteFile());
-        PropertiesUtil propertiesUtil = new PropertiesUtil();
-        propertiesUtil.load(file);
-    }
-
-    @Test
     public void getTest() throws IOException {
         PropertiesUtil propertiesUtil = new PropertiesUtil();
         propertiesUtil.load("ImageWindow.properties");

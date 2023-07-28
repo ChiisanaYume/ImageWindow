@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 
 public class ConfigData {
 
-    private String propertiesFilePath = "ImageWindow.properties";
+    private String propertiesFilePath;
 
     private String windowWidth;
     private String windowHeight;
@@ -79,6 +79,7 @@ public class ConfigData {
      * 从配置文件中读取配置
      */
     public void read() throws IOException {
+        checkPropertiesFile();
         PropertiesUtil config = new PropertiesUtil();
         config.load(propertiesFilePath);
 
@@ -133,5 +134,11 @@ public class ConfigData {
                 ", iconPath='" + iconPath + '\'' +
                 ", maxImageWidth='" + maxImageWidth + '\'' +
                 '}';
+    }
+
+    private void checkPropertiesFile() throws IOException {
+        ImageWindowCache cache = new ImageWindowCache();
+        cache.cacheFile();
+        setPropertiesFilePath(cache.coreProperties.getAbsolutePath());
     }
 }

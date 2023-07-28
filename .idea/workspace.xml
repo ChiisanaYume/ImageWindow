@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230728">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,24 +100,38 @@
       <recent name="D:\study\ImageWindow\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PropertiesUtilTest.loadTest2">
-    <configuration name="PropertiesUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imagewindow" />
+  <component name="RunManager" selected="应用程序.ImageWindow">
+    <configuration name="ImageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.ImageWindow" />
+      <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="PATTERN" value="com.faintdream.gui.swing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.PropertiesUtilTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropertiesUtilTest.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imagewindow" />
+    <configuration name="ImageWindowCacheTest.cacheFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImageWindow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
+      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.ImageWindowCacheTest" />
+      <option name="METHOD_NAME" value="cacheFileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertiesUtilTest.loadTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImageWindow" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
@@ -122,7 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
       <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.PropertiesUtilTest" />
-      <option name="METHOD_NAME" value="getTest" />
+      <option name="METHOD_NAME" value="loadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,36 +178,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropertiesUtilTest.setTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imagewindow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.faintdream.gui.swing.imagewindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.faintdream.gui.swing.imagewindow" />
-      <option name="MAIN_CLASS_NAME" value="com.faintdream.gui.swing.imagewindow.PropertiesUtilTest" />
-      <option name="METHOD_NAME" value="setTest2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.PropertiesUtilTest" />
-      <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
+      <item itemvalue="JUnit.ImageWindowCacheTest.cacheFileTest" />
+      <item itemvalue="JUnit.PropertiesUtilTest.loadTest (1)" />
       <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
       <item itemvalue="JUnit.PropertiesUtilTest.loadTest2" />
-      <item itemvalue="JUnit.PropertiesUtilTest.setTest2" />
+      <item itemvalue="应用程序.ImageWindow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ImageWindow" />
+        <item itemvalue="JUnit.ImageWindowCacheTest.cacheFileTest" />
+        <item itemvalue="JUnit.PropertiesUtilTest.loadTest (1)" />
         <item itemvalue="JUnit.PropertiesUtilTest.loadTest2" />
         <item itemvalue="JUnit.PropertiesUtilTest.loadTest" />
-        <item itemvalue="JUnit.PropertiesUtilTest.getTest" />
-        <item itemvalue="JUnit.PropertiesUtilTest" />
-        <item itemvalue="JUnit.PropertiesUtilTest.setTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -427,6 +429,17 @@
     <MESSAGE value="commit 20230727" />
     <MESSAGE value="commit 20230728" />
     <option name="LAST_COMMIT_MESSAGE" value="commit 20230728" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

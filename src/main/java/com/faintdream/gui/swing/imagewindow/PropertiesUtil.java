@@ -1,10 +1,19 @@
 package com.faintdream.gui.swing.imagewindow;
 
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
+/**
+ * Properties的操作类
+ * @author faintdream
+ * @version 1.0
+ * */
 public class PropertiesUtil {
 
     /**
@@ -24,27 +33,27 @@ public class PropertiesUtil {
     /**
      * 加载配置文件
      *
-     * @param configFile 配置文件名(注意配置文件要在类路径下)
-     * @throws IOException IO异常
-     */
-    public void load(String configFile) throws IOException {
-        // 加载配置文件(直接从流中加载)
-        InputStream stream = getStream(configFile);
-        properties.load(stream);
-        stream.close();
-    }
-
-    /**
-     * 加载配置文件
-     *
      * @param configFile 配置文件名
      * @throws IOException IO异常
      */
-    public void load(File configFile) throws IOException {
-        // 加载配置文件
-        InputStream stream = getStream(configFile);
-        properties.load(stream);
-        stream.close();
+    public void load(String configFile) throws IOException {
+        InputStream stream = null;
+
+        // 加载配置文件(尝试从绝对路径加载)
+        try{
+            stream = getStream(configFile);
+            properties.load(stream);
+            stream.close();
+            return;
+        }catch (IOException e){
+
+            // 加载配置文件(加载配置文件,尝试从类路径加载)
+            stream = getStreamAsClassPath(configFile);
+            properties.load(stream);
+            stream.close();
+        }
+
+
     }
 
     /**
@@ -67,9 +76,7 @@ public class PropertiesUtil {
     public void set(String key, String value) throws IOException {
         properties.setProperty(key, value);
         if (!isOnlyUpdateMemory()) {
-            // throw new IOException("暂时不支持修改配置文件");
-            // code
-            save(propertiesFile);
+            save();
         }
     }
 
@@ -84,14 +91,11 @@ public class PropertiesUtil {
 
 
     /**
-     * 获取输入流
+     * 保存 properties文件
+     * @throws IOException
      */
-    private InputStream getStream(String configFile) {
-        return getClass().getClassLoader().getResourceAsStream(configFile);
-    }
-
-    private InputStream getStream(File propertiesFile) throws IOException {
-        return Files.newInputStream(propertiesFile.toPath());
+    public void save() throws IOException {
+        save(propertiesFile);
     }
 
     /**
@@ -112,6 +116,16 @@ public class PropertiesUtil {
     }
 
 
+    /**
+     * 获取输入流
+     */
+    private InputStream getStreamAsClassPath(String configFile) {
+        return getClass().getClassLoader().getResourceAsStream(configFile);
+    }
+
+    private InputStream getStream(String configFile) throws IOException {
+        return Files.newInputStream(Paths.get(configFile));
+    }
 
     /**
      * getter & setter
