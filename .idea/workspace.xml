@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d9a5c64d-3e68-4890-a877-6d35edf60881" name="变更" comment="commit 20230728">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ConfigData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/ImageWindowCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/faintdream/gui/swing/imagewindow/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageWindow.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/faintdream/gui/swing/imagewindow/PropertiesUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,6 +224,7 @@
       <workItem from="1690009524122" duration="1713000" />
       <workItem from="1690444366008" duration="3755000" />
       <workItem from="1690501117774" duration="27000" />
+      <workItem from="1690757907723" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT 20230606">
       <created>1686035464169</created>
@@ -398,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690533647822</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="commit 20230728">
+      <created>1690550291032</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690550291032</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
